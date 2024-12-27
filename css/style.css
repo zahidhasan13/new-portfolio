@@ -83,26 +83,21 @@ hr {
 .header .box {
   height: 8vw;
   width: 14vw;
+  border-radius: 0.5vw;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 .header .box.about {
   background: var(--color-light);
-  border-radius: 10px;
-  padding: 0.5rem;
   color: var(--color-gray-dark);
 }
 .header .box.projects {
   background: var(--color-yellow);
-  border-radius: 10px;
-  padding: 0.5rem;
 }
 .header .box.skills {
   background: var(--color-cyan);
-  border-radius: 10px;
-  padding: 0.5rem;
 }
-.header .box span:last-child {
+.header .box span:nth-child(2) {
   font-size: 2.5vw;
 }
