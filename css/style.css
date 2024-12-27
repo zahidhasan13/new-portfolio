@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap");
+
+:root {
+  /* Colors */
+  --color-gray-dark: #030712;
+  --color-gray-light: #1f2937;
+  --color-yellow: #eab308;
+  --color-light: #f3f4f6;
+  --color-cyan: #27909f;
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+  background: var(--color-gray-light);
+  color: var(--color-light);
+  padding: 1%;
+}
+.wrapper {
+  background: var(--color-gray-dark);
+  min-height: 100vh;
+  border-radius: 20px;
+}
+.container {
+  max-width: 95vw;
+  margin: 0 auto;
+}
+.italic {
+  font-family: "Playfair", serif;
+  font-style: italic;
+}
+h2 {
+  font-size: 6.8vw;
+}
+hr {
+  width: 100%;
+  background: var(--color-light);
+  height: 0.1rem;
+}
+
+/* Header style */
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 2rem;
+}
+.header .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+.header .row:nth-child(3) {
+  margin-bottom: 7.5vw;
+}
+.header .row:nth-child(3) span,
+.header .row a {
+  font-size: 1.2vw;
+  color: var(--color-light);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.header .row:nth-child(7) {
+  justify-content: center;
+}
+.header .box {
+  height: 8vw;
+  width: 14vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.header .box.about {
+  background: var(--color-light);
+  border-radius: 10px;
+  padding: 0.5rem;
+  color: var(--color-gray-dark);
+}
+.header .box.projects {
+  background: var(--color-yellow);
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+.header .box.skills {
+  background: var(--color-cyan);
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+.header .box span:last-child {
+  font-size: 2.5vw;
+}
