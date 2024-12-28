@@ -281,3 +281,36 @@ hr {
   height: 2px;
   background-color: var(--color-yellow);
 }
+/* Footer */
+.footer {
+  background: var(--color-yellow);
+  text-align: center;
+  padding: 4vw 0;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+.footer-content span {
+  font-size: 3vw;
+  color: var(--color-gray-dark);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.social span a {
+  display: inline-block;
+  color: var(--color-gray-light);
+  font-size: 3vw;
+  transition: 0.3s;
+}
+.social span a:hover {
+  transform: rotate(180deg) scale(2);
+}
+.social span:nth-child(2) {
+  margin: 0 2vw;
+}
+.footer p {
+  font-size: 1.8vw;
+  color: var(--color-gray-dark);
+}
