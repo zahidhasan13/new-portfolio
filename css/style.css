@@ -150,14 +150,18 @@ hr {
   font-family: "Cabin", "sans-serif";
   text-transform: uppercase;
 }
+
 /* Project Section */
 .projects-section {
   margin-top: 2.5vw;
+  position: relative;
 }
 .project-list-wrapper {
-  margin-top: 2vw;
   display: flex;
   flex-direction: column;
+  background: var(--color-yellow);
+  color: var(--color-gray-light);
+  padding: 2vw 1vw;
 }
 .project-wrapper {
   display: flex;
@@ -165,10 +169,44 @@ hr {
   gap: 1vw;
 }
 .project-item {
+  margin-top: 1vw;
   display: flex;
   justify-content: space-between;
   align-items: end;
   overflow: hidden;
+  transition: 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+.project-item:hover .project-titles h2 {
+  color: var(--color-light);
+  font-style: italic;
+}
+.project-item .multiple-h2 {
+  display: none;
+}
+.project-item:hover .single-h2,
+.project-item:hover .project-details {
+  display: none;
+}
+.project-item:hover .multiple-h2 {
+  display: block;
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+}
+.hover-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 8vw;
+  height: 8vw;
+  border-radius: 1vw;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.8);
+  z-index: 10;
 }
 .project-titles {
   display: flex;
@@ -178,7 +216,6 @@ hr {
 .project-titles span,
 .project-details span {
   font-size: 1.2vw;
-  color: var(--color-light);
 }
 .project-details {
   display: flex;
@@ -186,4 +223,61 @@ hr {
   text-align: right;
   gap: 0.5vw;
   overflow: hidden;
+}
+/* About section */
+.about-section {
+  margin-top: 2.5vw;
+}
+.about-text {
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+.about-text p {
+  font-size: 3vw;
+  text-align: center;
+}
+/* Skill Section */
+.skills-section {
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 4vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+
+.skills-left,
+.skills-right {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 3vw;
+}
+
+.skill-item {
+  margin-bottom: 15px;
+}
+
+.skill-title {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 2vw;
+  color: var(--color-light);
+}
+
+.progress-bar {
+  position: relative;
+  height: 2px;
+  background-color: var(--color-light);
+  overflow: hidden;
+}
+
+.progress-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  background-color: var(--color-yellow);
 }
