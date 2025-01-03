@@ -188,7 +188,7 @@ gsap.fromTo(
     stagger: 0.2,
     scrollTrigger: {
       trigger: "#skills",
-      start: "top 30%",
+      start: "top 80%",
     },
   }
 );
@@ -206,7 +206,7 @@ gsap.fromTo(
     stagger: 0.2,
     scrollTrigger: {
       trigger: "#skills",
-      start: "top 30%",
+      start: "top 80%",
     },
   }
 );

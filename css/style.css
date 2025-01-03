@@ -23,6 +23,7 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Cabin", sans-serif;
@@ -53,6 +54,12 @@ hr {
   width: 100%;
   background: var(--color-light);
   height: 0.1rem;
+}
+.highlight {
+  background: var(--color-yellow);
+  color: var(--color-gray-dark);
+  border: 1px solid var(--color-gray-dark);
+  padding: 0.1vw;
 }
 
 /* Header style */
@@ -231,10 +238,13 @@ hr {
 .about-text {
   margin-top: 2vw;
   margin-bottom: 2vw;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
 }
 .about-text p {
-  font-size: 3vw;
-  text-align: center;
+  font-size: 2vw;
 }
 /* Skill Section */
 .skills-section {
