@@ -136,6 +136,14 @@ hr {
   border: 2px solid #ff0000;
   mix-blend-mode: difference;
 }
+
+@media (max-width: 1024px) {
+  .custom-cursor,
+  .custom-cursor--inner,
+  .custom-cursor--outer {
+    display: none;
+  }
+}
 /* Marquee */
 .marque-scroll {
   background: var(--color-light);
